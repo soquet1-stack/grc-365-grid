@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio Grid</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+	body {
+		background: lightgray;
+		padding: 0;
+		margin: 0;
+	} #page {
+		width: 900px;
+		heigh: 900px;
+		margin: 0 auto;
+	} h1 {
+		font: 64pt/1.3em Bricolage Grotesque;
+		text-align: center;
+		text-shadow: 2px 2px 3px gray;
+		margin: 0
+	} h2 {
+		font: 16pt/1em Bricolage Grotesque;
+		margin: 12 auto;
+		text-align: center;
+	} #sub-heading {
+		font: 24pt/1.2em Montserrat;
+		text-align: center;
+		margin: 12px 0px 24px 0px;
+	} #grid {
+		width: 800px;
+		height: 900px;
+		background: white;
+		border: 1px solid gray;
+		display: grid;
+		grid-template: auto auto / auto auto;
+		margin: 0 auto;
+	} div div {
+		font: 72pt/1.4em Bricolage Grotesque;
+		width: 400px;
+		height: auto;
+	} div div:nth-child(1) {
+		background: lightblue;
+	} div div:nth-child(2) {
+		background: lightgreen;
+		grid-area: 1/2/3/3;
+	} div div:nth-child(3) {
+		background: lightpink;
+	} div div:nth-child(4) {
+		background: lavender;
+	}
+</style>
+</head>
+
+<body>
+	<h1> Mmm-mazing! Food Delivery </h1>
+	<p id="sub-heading"> -- Just Say the Word. We'll be There. --</p>
+	<div id= "page">
+	<div id="grid">
+		<img src= "burger-resize-2.jpg">
+	  <img style= "grid-area: 1/2/4/3;" src= "delivery-resize.jpg">
+	  <img src= "sushi-resize.jpg">
+	  <img src= "taco-resize.jpg">
+	</div>
+	</div>
+	<h2> <a href="https://www.storyblocks.com"> Royalty Free Photo Source </a> 
+	</h2>
+</body>
+</html>
